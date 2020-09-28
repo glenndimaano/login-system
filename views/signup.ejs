@@ -1,0 +1,25 @@
+<form action="/signup" method="POST">
+	<%- include("./partials/messages") %>
+	<input
+		name="displayName"
+		type="text"
+		placeholder="Name"
+		value="<%= typeof displayName != 'undefined' ? displayName : '' %>"
+	/>
+	<input
+		name="username"
+		type="email"
+		placeholder="Username / Email"
+		value="<%= typeof username != 'undefined' ? username : '' %>"
+	/>
+	<input name="password" type="password" placeholder="Password" />
+	<input
+		name="confirmPassword"
+		type="password"
+		placeholder="Confirm Password"
+	/>
+	<button type="submit" class="btn">Register</button>
+	<hr />
+	<a href="/auth/google">Connect with Google</a>
+	<a href="/auth/facebook">Connect with Facebook</a>
+</form>

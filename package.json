@@ -1,0 +1,43 @@
+{
+	"name": "social-login",
+	"version": "0.1.0",
+	"description": "Login Template using PassportJs",
+	"main": "app.js",
+	"scripts": {
+		"dev": "cross-env NODE_ENV='development' nodemon server/app.js",
+		"start": "node server/app.js"
+	},
+	"keywords": [
+		"nodejs",
+		"expressjs",
+		"bcryptjs",
+		"mongoose",
+		"ejs",
+		"passportjs"
+	],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"bcryptjs": "^2.4.3",
+		"connect-flash": "^0.1.1",
+		"connect-mongo": "^3.2.0",
+		"consola": "^2.15.0",
+		"ejs": "^3.1.5",
+		"express": "^4.17.1",
+		"express-ejs-layouts": "^2.5.0",
+		"express-session": "^1.17.1",
+		"helmet": "^4.1.1",
+		"method-override": "^3.0.0",
+		"mongoose": "^5.10.6",
+		"passport": "^0.4.1",
+		"passport-facebook": "^3.0.0",
+		"passport-google-oauth20": "^2.0.0",
+		"passport-local": "^1.0.0"
+	},
+	"devDependencies": {
+		"cross-env": "^7.0.2",
+		"dotenv": "^8.2.0",
+		"morgan": "^1.10.0",
+		"nodemon": "^2.0.4"
+	}
+}

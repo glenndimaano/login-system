@@ -1,0 +1,9 @@
+<form action="/login" method="POST">
+    <%- include("./partials/messages") %>
+    <input name="username" placeholder="Username" type="text">
+    <input name="password" placeholder="Password" type="password">
+    <button type="submit">Sign in</button>
+    <hr>
+    <a href="/auth/google">Connect with Google</a>
+    <a href="/auth/facebook">Connect with Facebook</a>
+</form>
